@@ -3,9 +3,38 @@
   "description": "test",
   "author": "Kasper Bartholdi Gustavii <kasper.gustavii@live.se>",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "lib/awm-utils.min.js",
   "files": [
-    "src/index.js"
+    "lib/awm-utils.min.js"
   ],
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "webpack --env build --mode production"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-dom": "16.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "5.6.0",
+    "eslint-config-kivra": "^0.5.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-kivra",
+      "react-app"
+    ],
+    "rules": {
+      "no-invalid-this": 0,
+      "no-process-env": 0
+    }
+  }
 }

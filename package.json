@@ -1,0 +1,8 @@
+{
+  "name": "awm-utils",
+  "description": "",
+  "author": "Kasper Bartholdi Gustavii <kasper.gustavii@live.se>",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": false
+}

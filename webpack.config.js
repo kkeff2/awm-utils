@@ -32,7 +32,8 @@ const config = {
                 use: {
                     loader: "babel-loader"
                 }
-            }
+            },
+
         ]
     },
     resolve: {
